@@ -6,7 +6,8 @@ This project was generated with [NodeJs](https://nodejs.org/en/) and [HapiJs](ht
 
 - Run `npm install` to download all the dependencies.
 - Set DB params of your PG server in [knexfile.js](knexfile.js) as per your local setup.
-- Run ` npx knex migrate:latest` for generating the database schema and `node app.js` to run the project.
+- Run `npx knex migrate:latest` for generating the database schema and `node app.js` to run the project.
+- HTTPs is enabled but the SSL Certificate is locally signed. So to use postman please go to settings and disable "SSL certificate verification".
 
 ## Info
 
