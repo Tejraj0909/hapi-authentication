@@ -2,14 +2,18 @@ import Boom from 'boom';
 import Bcrypt from 'bcrypt';
 import jwt  from 'jsonwebtoken';
 import { ResponseToolkit, Request } from 'hapi';
+import userService from '../services/user'
 
 
 
 
 
-const signup = async (Request : Request, Response :ResponseToolkit ) => {
+const signup = async ( {payload : object}: Request, Response :ResponseToolkit, err?: Error ) => {
 
     try {
+    
+
+     
   
       return Response.response('Yes').code(200)
   
