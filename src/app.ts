@@ -9,8 +9,11 @@ const init = async () => {
     host: 'localhost',
   });
 
-//   await server.register(require('hapi-auth-jwt2'));
-//   await server.register(require('@hapi/basic'));
+  await server.register(require('./routes/user'), {
+    routes: {
+      prefix: '/user'
+    }
+  });
 
 
 
