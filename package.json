@@ -2,22 +2,25 @@
   "name": "hapi-authentication",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tejraj0909/hapi-authentication.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tejraj0909/hapi-authentication/issues"
-  },
-  "homepage": "https://github.com/Tejraj0909/hapi-authentication#readme",
   "dependencies": {
+    "@hapi/cookie": "^12.0.0",
     "@hapi/hapi": "^21.0.0",
-    "dotenv": "^16.0.3"
+    "bcrypt": "^5.1.0",
+    "boom": "^7.3.0",
+    "dotenv": "^16.0.3",
+    "hapi-auth-cookie-jwt": "^3.0.1",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.3.0",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.0"
   }
 }

@@ -1,4 +1,4 @@
-
+const userController = require('../controllers/user')
 const Joi = require('joi');
 
 const userRoute = {
@@ -10,9 +10,11 @@ const userRoute = {
        server.route({
             method: 'POST',
             path: '/signin',
-        //    handler:  ,
+            handler: userController.signin ,
             options: {
-               
+                auth: {
+                    mode: 'try'
+                },
                 validate: {
                         payload: Joi.object({
                             email: Joi.string().email().required(),
@@ -26,7 +28,7 @@ const userRoute = {
         server.route({
             method: 'POST',
             path: '/signup',
-          //  handler: 
+            handler: userController.signup,
             options: {
                 auth: false,
                 validate: {
@@ -44,8 +46,10 @@ const userRoute = {
         server.route({
             method: 'GET',
             path: '/created',
-       //     handler: 
-           
+            handler: userController.created,
+            config: {
+                auth: 'token'
+            }
         });
     }
 };
