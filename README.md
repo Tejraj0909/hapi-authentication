@@ -45,3 +45,11 @@ This documentation will go through the basic introdution about the components an
 
   This route is responsible for retruning the list of all users if there is a valid cookie auth in the request header.
 
+## User Schema
+
+The structure is present in migrations folder inside database folder. generated through Knex.
+
+- Id : User ID is self egnerated UIID.
+- Email : Email is stored as a string after Joi email validation.
+- Password : Is stored in hash after being converted through [Bcrypt](https://www.npmjs.com/package/bcrypt)
+
