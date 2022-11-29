@@ -14,7 +14,11 @@ const init = async () => {
    
      
    });
-  
+   await server.register(require('./routes/user'),{
+    routes: {
+        prefix: '/user'
+    }
+    });
  
      
      server.start();
