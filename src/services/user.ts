@@ -1,6 +1,13 @@
 'use strict';
-import DB from '../database/db'
 import bcrypt from 'bcrypt'
+import config from '../knexfile';
+import knex from 'knex'
+
+const cfg = config.development
+
+const DB  =  knex(cfg)
+
+
 
 const signUpUser = async function (userData : object) {
    const result = await DB('users').insert(userData);

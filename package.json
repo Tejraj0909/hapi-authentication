@@ -5,7 +5,10 @@
   "main": "app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon"
+    "start": "npx nodemon",
+    "knex:migrate:make": "knex --knexfile src/database/knexfile.ts -x ts migrate:make",
+    "knex:migrate:latest": "knex --knexfile src/database/knexfile.ts migrate:latest",
+    "knex:migrate:rollback": "knex --knexfile src/database/knexfile.ts migrate:rollback"
   },
   "keywords": [],
   "author": "",
