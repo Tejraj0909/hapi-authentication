@@ -25,7 +25,7 @@ This project deals wiht signing up user, auhtenticating him using cookie auth an
 
 This documentation will go through the basic introdution about the components and their work around.
 
-## User Signup 
+## User Signup
 
  This route adds a database entry for a user after some validations and checks.
 
@@ -41,7 +41,7 @@ This documentation will go through the basic introdution about the components an
 - Comparing the passwords using bcrypt
 - Returning auth token through cookie.
   
-##  Get User List 
+## Get User List
 
   This route is responsible for retruning the list of all users if there is a valid cookie auth in the request header.
 
@@ -52,4 +52,3 @@ The structure is present in migrations folder inside database folder. generated 
 - Id : User ID is self egnerated UIID.
 - Email : Email is stored as a string after Joi email validation.
 - Password : Is stored in hash after being converted through [Bcrypt](https://www.npmjs.com/package/bcrypt)
-
