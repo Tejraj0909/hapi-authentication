@@ -1,9 +1,7 @@
 'use strict';
 
+const environment = 'development';
+const config = require('../knexfile')[environment];
 
-const environment =  'development';
-const config      = require('../knexfile')[environment];
-
-
-module.exports    = require('knex')(config);
+module.exports = require('knex')(config);
 

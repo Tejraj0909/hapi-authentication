@@ -1,5 +1,5 @@
 module.exports = {
-    jwtAuthOptions: {
+	jwtAuthOptions: {
 		key: process.env.JWT_SECRET,
 		algorithm: 'HS256'
 	}

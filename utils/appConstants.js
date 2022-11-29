@@ -1,15 +1,12 @@
 module.exports = {
-   requestSucceededCode : 200,
-   requestSucceededMessage : 'Ok',
-   
-   createdCode : 201,
-   createdMessage : 'Created',
+   requestSucceededCode: 200,
+   requestSucceededMessage: 'Ok',
 
-   internalServerCode : 500,
-   internalServerMessage : 'Something went wrong, please try again later.',
+   createdCode: 201,
+   createdMessage: 'Created',
 
-   userExistsMessage : 'This email is already registered'
+   internalServerCode: 500,
+   internalServerMessage: 'Something went wrong, please try again later.',
 
-
-
+   userExistsMessage: 'This email is already registered'
 }

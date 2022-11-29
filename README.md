@@ -20,7 +20,7 @@ This project deals wiht signing up user, auhtenticating him using cookie auth an
 
 - User Signup
 - User Signin
-- User Created
+- Get User List
 
 This documentation will go through the basic introdution about the components and their work around.
 
@@ -40,7 +40,7 @@ This documentation will go through the basic introdution about the components an
 - Comparing the passwords using bcrypt
 - Returning auth token through cookie.
   
-##  User Created 
+##  Get User List 
 
   This route is responsible for retruning the list of all users if there is a valid cookie auth in the request header.
 
