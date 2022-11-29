@@ -40,10 +40,7 @@ import Joi  from 'joi';
     server.route({
         method: 'GET',
         path: '/getAll',
-        handler: userController.getAll ,
-        options: {
-          auth: false
-        }
+        handler: userController.getAll 
       });
   
     }
