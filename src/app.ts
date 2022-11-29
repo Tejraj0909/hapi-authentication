@@ -2,7 +2,7 @@ import * as Hapi from '@hapi/hapi';
 import { Server, ServerRoute } from '@hapi/hapi';
 import appConstants from './utils/appConstants';
 import Fs from 'fs';
-
+import path from 'path'
 
 
 const init = async () => {
@@ -10,8 +10,8 @@ const init = async () => {
     port: 3000,
     host: 'localhost',
     tls: {
-      key: Fs.readFileSync('key.pem'),
-      cert: Fs.readFileSync('cert.pem')
+      key: Fs.readFileSync(path.resolve(__dirname, 'key.pem')),
+      cert: Fs.readFileSync(path.resolve(__dirname, 'cert.pem'))
     }
   });
   await server.register(require('@hapi/cookie'));
